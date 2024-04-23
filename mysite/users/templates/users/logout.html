@@ -1,0 +1,7 @@
+{% load static %}
+
+<form action="{% url 'custom_logout' %}" method="post">
+    {% csrf_token %}
+    <link rel="stylesheet" href="{% static 'myapp/style2.css' %}">
+    <button type="submit">Log out</button>
+</form>

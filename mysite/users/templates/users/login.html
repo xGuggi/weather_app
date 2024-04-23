@@ -1,0 +1,7 @@
+{% load static %}
+<form method="POST">
+    <link rel="stylesheet" href="{% static 'myapp/style2.css' %}">
+    {% csrf_token %}
+    {{ form }}
+    <button type="submit">Login</button>
+</form>
